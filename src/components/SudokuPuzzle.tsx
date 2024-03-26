@@ -3,7 +3,7 @@ import "./sudokuPuzzle.css";
 
 const SudokuPuzzle = () => {
   const puzzle = generateRandomSudokuPuzzle();
-
+  console.log(puzzle);
   return (
     <div className="container-grid">
       {puzzle.map((p) => (

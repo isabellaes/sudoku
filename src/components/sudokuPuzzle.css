@@ -1,11 +1,9 @@
 .container-grid {
   display: grid;
-  grid: auto auto auto/ auto auto auto;
+  grid: auto auto auto auto auto auto auto auto auto/auto auto auto auto auto auto auto auto auto;
 }
 
 .box-grid {
-  display: grid;
-  grid: auto auto auto/ auto auto auto;
   border: 1px solid white;
 }
 
