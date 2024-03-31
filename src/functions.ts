@@ -8,6 +8,7 @@ export function generateRandomSudokuPuzzle() {
   }
   fillDiagonal(puzzle);
   fillRemaining(0, SQR_GRIDNUM, puzzle);
+  removeKDigits(puzzle);
 
   return puzzle;
 }
@@ -111,4 +112,20 @@ function fillRemaining(i: number, j: number, grid: number[][]) {
 
   // No valid value was found, so backtrack
   return false;
+}
+
+function removeKDigits(grid: number[][]) {
+  let count = 30;
+
+  while (count !== 0) {
+    // extract coordinates i and j
+    let i = Math.floor(Math.random() * GRIDNUM);
+    let j = Math.floor(Math.random() * GRIDNUM);
+    if (grid[i][j] !== 0) {
+      count--;
+      grid[i][j] = 0;
+    }
+  }
+
+  return;
 }

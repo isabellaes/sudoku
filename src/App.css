@@ -4,7 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
-
+h1 {
+  text-shadow: 2px 2px 5px rgb(20, 1, 1);
+}
 .logo {
   height: 6em;
   padding: 1.5em;
